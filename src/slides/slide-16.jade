@@ -1,5 +1,17 @@
 section
-	h2 Transições com diferentes propriedades (Width, height, background)
+	h3 Transition
 
+	div.example-area
+		button.btn.botao03
 
-
+	pre
+		style(contenteditable="true" style="display: block;")
+			| .botao03 {
+			|    width: ; /* Estado Inicial */ 
+			|    background-color: #0288d1;
+			|    transition: width .5s;
+			|}
+			| .botao03:hover {
+			|    width: ; /* Estado Final */ 
+			|    background-color: #b3e5fc;
+			|}
