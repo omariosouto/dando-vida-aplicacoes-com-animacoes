@@ -1,0 +1,22 @@
+section
+	h3 Zoom: Texto
+
+	div.example-area
+		h4.btn.titulo-zoom Título Crescente
+
+	style
+		| .titulo-zoom { font-family: 'Arial', sans-serif !important; margin: auto !important; background: transparent; }
+	pre
+		style(contenteditable="true" style="display: block;")
+			| .titulo-zoom {
+			|    width: 100px;
+			|    height: 100px;
+			|    transition: width 1s, height 1s;
+			|}
+			| .titulo-zoom:hover {
+			|    width: 200px;
+			|    height: 200px;
+			|}
+
+
+	p.fragment Qual o problema desse formato?

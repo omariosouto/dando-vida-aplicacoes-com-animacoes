@@ -1,4 +1,17 @@
 section
-	h2 - Fazer com width e height;
+	h3 Zoom: Width Height
 
+	div.example-area
+		button.btn.botao07(style="padding: 0;")
 
+	pre
+		style(contenteditable="true" style="display: block;")
+			| .botao07 {
+			|    width: 100px;
+			|    height: 100px;
+			|    transition: width 1s, height 1s;
+			|}
+			| .botao07:hover {
+			|    width: 200px;
+			|    height: 200px;
+			|}

@@ -1,7 +1,34 @@
 section
 	h2 Transform
-	p Refazer esse exemplo
-	a https://codepen.io/soutomario/pen/YZJeEm?editors=1100
+	div.example-area.example-area-transform
+		button.transform.btn.transition Transform
+		button.transform.btn.position   Position
+	style
+		|.transform {
+		|   color: white;
+		|   display: block;
+		|   width: 7%;
+		|   padding-top: 7%;		
+		|   display: block;
+		|   background-color: black;
+		|}
+	pre
+		style(contenteditable="true" style="display: block;")
+			|.transform {
+			|   position: relative;
+			|   top: 0;
+			|   left: 0;
+			|   transition: .5s linear;
+			|}
+			|.example-area-transform:hover .transition {
+			|   transform: translate(50px, 50px);
+			|}
+
+			|.example-area-transform:hover .position {
+			|   top: 50px;
+			|   left: 50px;
+			|}
+
 
 
 

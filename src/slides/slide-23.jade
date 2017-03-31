@@ -1,4 +1,15 @@
 section
-	h2 Sintaxe do Translate com exemplo
+	h3 Translate
 
+	div.example-area
+		button.btn.botao06
 
+	pre
+		style(contenteditable="true" style="display: block;")
+			| .botao06 {
+			|    transform: translate(0px, 0); /* translate(X e Y) */
+			|    transition: transform 1s;
+			|}
+			| .botao06:hover {
+			|    transform: translate(50%, 0); /* translate(X e Y) */
+			|}
