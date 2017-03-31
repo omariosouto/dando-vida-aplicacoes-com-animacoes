@@ -132,8 +132,8 @@
         <section>
           <h2>Como mexer com a posição de elementos no CSS?</h2>
         </section>
-        <section>
-          <h2>Position!</h2>
+        <section data-background-image="./img/gifs/css-is-awesome.jpg">
+          <h2 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Position!</h2>
         </section>
         <section>
           <h3>Position</h3>
@@ -154,46 +154,169 @@
             </style></pre>
         </section>
         <section>
-          <h2>Mas qual o real propósito do position?</h2>
+          <h2>Será que o position é a melhor forma de fazer isso?</h2>
         </section>
         <section>
           <h2>Transform</h2>
-          <p>Refazer esse exemplo</p><a>https://codepen.io/soutomario/pen/YZJeEm?editors=1100</a>
+          <div class="example-area example-area-transform">
+            <button class="transform btn transition">Transform</button>
+            <button class="transform btn position">  Position</button>
+          </div>
+          <style>
+            .transform {
+              color: white;
+              display: block;
+              width: 7%;
+              padding-top: 7%;		
+              display: block;
+              background-color: black;
+            }
+          </style>
+          <pre>
+            <style contenteditable="true" style="display: block;">.transform {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: .5s linear;
+}
+.example-area-transform:hover .transition {
+  transform: translate(50px, 50px);
+}
+.example-area-transform:hover .position {
+  top: 50px;
+  left: 50px;
+}
+            </style></pre>
         </section>
         <section>
-          <h2>Sintaxe do Translate com exemplo</h2>
+          <h3>Translate</h3>
+          <div class="example-area">
+            <button class="btn botao06"></button>
+          </div>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao06 {
+   transform: translate(0px, 0); /* translate(X e Y) */
+   transition: transform 1s;
+}
+.botao06:hover {
+   transform: translate(50%, 0); /* translate(X e Y) */
+}
+            </style></pre>
         </section>
+        <section data-background-image="./img/gifs/rotate-example.gif"></section>
         <section>
-          <h2>Legal, apremndemos a movimentar mas como fazer um efeito de Zoom em um elemento?</h2>
-        </section>
-        <section>
-          <h2>- Fazer com width e height;</h2>
+          <h3>Zoom: Width Height</h3>
+          <div class="example-area">
+            <button style="padding: 0;" class="btn botao07"></button>
+          </div>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao07 {
+   width: 100px;
+   height: 100px;
+   transition: width 1s, height 1s;
+}
+.botao07:hover {
+   width: 200px;
+   height: 200px;
+}
+            </style></pre>
         </section>
         <section>
           <h2>E se eu quiser fazer isso com um texto?</h2>
         </section>
         <section>
-          <h2>(gif frustrado)</h2>
+          <h3>Zoom: Texto</h3>
+          <div class="example-area">
+            <h4 class="btn titulo-zoom">Título Crescente</h4>
+          </div>
+          <style>.titulo-zoom { font-family: 'Arial', sans-serif !important; margin: auto !important; background: transparent; }</style>
+          <pre>
+            <style contenteditable="true" style="display: block;">.titulo-zoom {
+   width: 100px;
+   height: 100px;
+   transition: width 1s, height 1s;
+}
+.titulo-zoom:hover {
+   width: 200px;
+   height: 200px;
+}
+            </style></pre>
+          <p class="fragment">Qual o problema desse formato?</p>
         </section>
+        <section data-background-image="./img/gifs/bob-esponja-sad.gif"></section>
         <section>
-          <h2>Scale</h2>
+          <h3>Scale</h3>
+          <div class="example-area">
+            <button class="btn botao08"></button>
+          </div>
+          <style>
+            .botao08 {
+               padding-top: 0;
+            }
+          </style>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao08 {
+   width: 100px;
+   height: 100px;
+   transform: scale(.5); /* scale(proportion) */
+   transition: transform 1s;
+}
+.botao08:hover {
+   transform: scale(1); /* scale(proportion) */
+}
+            </style></pre>
         </section>
+        <section data-background-image="./img/gifs/rotate-example.gif"></section>
         <section>
-          <h2>Agora vamos dificultar, agora e se eu quiser fazer um elemento: crescer rodando;</h2>
+          <h3>Scale<span class="fragment">  + Rotate</span></h3>
+          <div class="example-area">
+            <button class="btn botao08"></button>
+          </div>
+          <style>
+            .botao08 {
+               padding-top: 0;
+            }
+          </style>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao08 {
+   width: 100px;
+   height: 100px;
+   transform: scale(.5); /* rotate(deg) */
+   transition: transform 1s;
+}
+.botao08:hover {
+   transform: scale(1); /* rotate(deg) */
+}
+            </style></pre>
         </section>
-        <section>
-          <h2>Slide com content editable e criação do efeito na hora com rotate;</h2>
-        </section>
-        <section>
-          <h2>Mostrar o logo do filme “De volta para o Futuro” animado;</h2>
-        </section>
+        <section data-background-image="./img/gifs/skew-example.gif"></section>
         <section>
           <h2>Como recriar esse efeito na nossa land page?</h2>
         </section>
         <section>
-          <h2>Fazer o efeito do de volta pro futuro até chegar no Skew</h2>
+          <h3> <span class="fragment">Skew: </span>De Volta para o Futuro</h3>
+          <div class="example-area">
+            <button class="btn botao09"><img src="./img/png/bttf-logo.png" style="border: 0 !important; box-shadow: none !important; background: none !important;"></button>
+          </div>
+          <style>
+            .botao09 {
+               background: none !important;
+               padding-top: 0;
+            }
+          </style>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao09 {
+   width: 200px;
+   height: 100px;
+   transform: translate(-300px)  skew(30deg); /* skew(deg) */
+   transition: transform 1s;
+}
+.botao09:hover {
+   transform: translate(0); /* skew(deg) */
+}
+            </style></pre>
         </section>
-        <section>
+        <section data-background-image=".img/gifs/animacao-infinita.gif">
           <h2>Beleza, mas além das animações de hover algumas animações acontecem sozinhas, como podemos fazer isso?</h2>
         </section>
         <section>
