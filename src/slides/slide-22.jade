@@ -1,10 +1,10 @@
 section
 	h2 Transform
 	div.example-area.example-area-transform
-		button.transform.btn.transition Transform
-		button.transform.btn.position   Position
+		button.transition.btn.transform Transform
+		button.transition.btn.position   Position
 	style
-		|.transform {
+		|.transition {
 		|   color: white;
 		|   display: block;
 		|   width: 7%;
@@ -14,19 +14,19 @@ section
 		|}
 	pre
 		style(contenteditable="true" style="display: block;")
-			|.transform {
+			|.example-area-transform { background-color: aquamarine; }
+			| 
+			|.transition {
 			|   position: relative;
-			|   top: 0;
-			|   left: 0;
+			|   top: 0; left: 0;
 			|   transition: .5s linear;
 			|}
-			|.example-area-transform:hover .transition {
+			|.example-area-transform:hover .transform {
 			|   transform: translate(50px, 50px);
 			|}
 
 			|.example-area-transform:hover .position {
-			|   top: 50px;
-			|   left: 50px;
+			|   top: 50px; left: 50px;
 			|}
 
 
