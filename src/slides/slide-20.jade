@@ -1,5 +1,18 @@
 section
-	h2 Mostrar uma animação com position
+	h3 Position
 
+	div.example-area.example-area-position
+		button.btn(style="opacity: 0;")
+		button.btn.botao04
 
-
+	pre
+		style(contenteditable="true" style="display: block;")
+			| .example-area-position { position: relative; } 
+			| .botao04 {
+			|    position: absolute;
+			|    transition: top 1s, left 1s;
+			|    top: 0; left: 0;
+			|}
+			| .example-area-position:hover .botao04 {
+			|    top: 0px; left: 50%;
+			|}
