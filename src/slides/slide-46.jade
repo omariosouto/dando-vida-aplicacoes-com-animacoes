@@ -1,5 +1,34 @@
 section
-	h2 Alternate
+	h2 animation-direction
+
+	div.example-area
+		button.btn.botao13
+	
+	style
+		| .botao13 {
+		|    width: 10%;
+		|    padding-top: 10%;
+		|}
+
+	pre
+		style(contenteditable="true" style="display: block;")
+			| .botao13 {
+			|    animation: botao13 2s infinite;
+			|    animation-direction: alternate;
+			|}
+			| @keyframes botao13 {
+			|    0% {
+			|       width: 2%;
+			|       background-color: red;
+			|    }
+			|    50% {
+			|       background-color: yellow;
+			|    }
+			|    100% {
+			|       width: 30%;
+			|       background-color: blue;
+			|    }
+			|}
 
 
 

@@ -1,5 +1,21 @@
 section
-	h2 Content editable com aplicação da animação "from to"
+	h3 
+		span Key
+		span Frames
 
+	div.example-area
+		button.btn.botao10
 
-
+	pre
+		style(contenteditable="true" style="display: block;")
+			| .botao10 {
+			|    animation: botao10 5s;
+			|}
+			| @keyframes botao10 {
+			|    from {
+			|       background-color: red;
+			|    }
+			|    to {
+			|       background-color: blue;
+			|    }
+			|}

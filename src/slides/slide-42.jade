@@ -1,5 +1,35 @@
 section
-	h2 Fazer um quadrado andando trocando de cor pra cada porcentagem do keyframe
+	h3 
+		span KeyFrames: Porcentagem
 
+	div.example-area
+		button.btn.botao11
+	
+	style
+		| .botao11 {
+		|    width: 10%;
+		|    padding-top: 10%;
+		|}
 
-
+	pre
+		style(contenteditable="true" style="display: block;")
+			| .botao11 {
+			|    animation: botao11 5s;
+			|}
+			| @keyframes botao11 {
+			|    0% {
+			|       background-color: red;
+			|    }
+			|    25% {
+			|       background-color: orange;
+			|    }
+			|    50% {
+			|       background-color: yellow;
+			|    }
+			|    75% {
+			|       background-color: green;
+			|    }
+			|    100% {
+			|       background-color: blue;
+			|    }
+			|}

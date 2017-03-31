@@ -1,5 +1,32 @@
 section
-	h2 Repeat
+	h3 
+		span Iteração (Repetição)
 
+	div.example-area
+		button.btn.botao12
+	
+	style
+		| .botao12 {
+		|    width: 10%;
+		|    padding-top: 10%;
+		|}
 
-
+	pre
+		style(contenteditable="true" style="display: block;")
+			| .botao12 {
+			|    animation: botao12 5s;
+			|    animation-iteration-count: infinite;
+			|}
+			| @keyframes botao12 {
+			|    0% {
+			|       width: 2%;
+			|       background-color: red;
+			|    }
+			|    50% {
+			|       background-color: yellow;
+			|    }
+			|    100% {
+			|       width: 30%;
+			|       background-color: blue;
+			|    }
+			|}
