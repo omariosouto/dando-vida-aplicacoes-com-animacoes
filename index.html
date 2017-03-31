@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Meetup CSS</title>
+    <title>Dando vida para aplicações Web</title>
     <meta name="description" content="Create your presentations never been so easy with code.">
     <meta name="author" content="You">
     <meta property="og:type" content="website">
@@ -33,8 +33,8 @@
 
     <div class="reveal">
       <div class="slides">
-        <section data-background-color="#ff6a00">
-          <h2 style="color: #FFF;">Icônico-SVG</h2>
+        <section data-background-color="#666666" data-background-image="./img/gifs/frankstein-alive.gif">
+          <h2 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Dando vida para aplicações Web</h2>
         </section>
         <section><img src="./img/author.jpg" style="border-radius: 100%; border: 0; max-width: 100%; max-height: 100%;">
           <h3>Mario Souto Silva</h3>
@@ -43,55 +43,91 @@
           <div style="margin: auto; display: flex; justify-content: center; align-items: center; width: 60%;"><img src="./img/logo-mario.svg" style="width: 15%; border: 0 !important; margin: 10px 30px; box-shadow: none; background: none;"><img src="./img/logo-pulso.svg" style="width: 20%; border: 0 !important; margin: 10px 30px; box-shadow: none; background: none;"></div>
         </section>
         <section>
-          <h1>REDES SOCIAIS</h1>
+          <h1> </h1>
+          <ul> 
+            <li>Facebook /soutomario</li>
+            <li>GitHub   /soutomario</li>
+            <li>Twitter  @soutomarios</li>
+          </ul>
         </section>
+        <section data-background-image="./img/gifs/layout-estatico.gif"></section>
+        <section data-background-image="./img/gifs/site-animado.gif"></section>
         <section>
-          <h1>GIF LAYOUT ESTÁTICO</h1>
+          <h3>Legal pra C@R!#$(*@ né?</h3>
         </section>
-        <section>
-          <h1>GIF LAYOUT ANIMADO(Site Awwards)</h1>
-        </section>
-        <section>
-          <h3>Legal pra C@R!#$(*@ esse site né?</h3>
-        </section>
-        <section>
-          <h3>Qual a diferença entre esses dois sites?</h3>
+        <section data-background-image="./img/gifs/comparacao.jpg" data-background-position="center top">
+          <h3 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Qual a diferença entre esses dois sites?</h3>
         </section>
         <section>
           <h3>Como podemos melhorar?</h3>
         </section>
-        <section>
-          <h3>Com flash?</h3>
+        <section data-background-image="./img/png/flash-start.png" data-background-size="contain">
+          <h3 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Com flash!</h3>
         </section>
-        <section>
-          <h3>NOOOO GOD PLEASE NO! (gif)</h3>
+        <section data-background-image="./img/gifs/no-god-please.gif">
+          <h3 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">NOOOO GOD PLEASE NO!</h3>
         </section>
+        <section data-background-image="./img/gifs/flash-dead.jpg"></section>
         <section>
-          <h3>HTML e CSS <span style="color: red;">❤</span></h3>
+          <h2>HTML e CSS <span style="color: red;">❤</span></h2>
         </section>
-        <section>
-          <h3>Então vamos lá baby-metas (imagem do baby de fundo)</h3>
+        <section data-background-image="./img/gifs/baby.gif">
+          <h3 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Então vamos lá baby-metas</h3>
         </section>
         <section>
           <h3>Qual a forma mais simples de fazer animações com CSS?</h3>
         </section>
         <section>
-          <h3>Hover (Fazer um botão e mostrar a transição com o CSS no próprio slide)</h3>
+          <h3>Hover</h3>
+          <div class="example-area">
+            <button class="btn botao01"></button>
+          </div>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao01 {
+   background-color: #0288d1;
+}
+.botao01:hover {
+   background-color: #b3e5fc;
+}
+            </style></pre>
+        </section>
+        <section data-background-image="./img/gifs/water-to-ice.gif">
+          <h3 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Animações são trocas de estados</h3>
         </section>
         <section>
-          <h3>Como deixar isso menos seco?</h3>
+          <h3>Transition</h3>
+          <div class="example-area">
+            <button class="btn botao02"></button>
+          </div>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao02 {    
+   background-color: #0288d1;
+   transition: ; /* property duration */
+}
+.botao02:hover {
+   background-color: #b3e5fc;
+}
+            </style></pre>
         </section>
         <section>
-          <h2>Transitions</h2>
-          <pre><code>.elemento {
-   transition: "property" "duration";
-}</code></pre>
+          <h3>Transition</h3>
+          <div class="example-area">
+            <button class="btn botao03"></button>
+          </div>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao03 {
+   width: ; /* Estado Inicial */ 
+   background-color: #0288d1;
+   transition: width .5s;
+}
+.botao03:hover {
+   width: ; /* Estado Final */ 
+   background-color: #b3e5fc;
+}
+            </style></pre>
         </section>
-        <section>
-          <h2>Transições com diferentes propriedades (Width, height, background)</h2>
-        </section>
-        <section>
-          <h2>Legal, mas se a formos olhar o site, várias animações acontecem com elementos surgindo de um lado para outro (mostrar gif)</h2>
+        <section data-background-image="./img/gifs/animar-lateralmente.gif">
+          <h3 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Como animar de um lado para o outro?</h3>
         </section>
         <section>
           <h2>Como mexer com a posição de elementos no CSS?</h2>
@@ -100,7 +136,22 @@
           <h2>Position!</h2>
         </section>
         <section>
-          <h2>Mostrar uma animação com position</h2>
+          <h3>Position</h3>
+          <div class="example-area example-area-position">
+            <button style="opacity: 0;" class="btn"></button>
+            <button class="btn botao04"></button>
+          </div>
+          <pre>
+            <style contenteditable="true" style="display: block;">.example-area-position { position: relative; } 
+.botao04 {
+   position: absolute;
+   transition: top 1s, left 1s;
+   top: 0; left: 0;
+}
+.example-area-position:hover .botao04 {
+   top: 0px; left: 50%;
+}
+            </style></pre>
         </section>
         <section>
           <h2>Mas qual o real propósito do position?</h2>
@@ -184,6 +235,17 @@
         </section>
         <section>
           <h2>Mão na massa</h2>
+        </section>
+        <section>
+          <h2>Dicas Finais</h2>
+          <ul>
+            <li class="framgent">Will Change</li>
+            <li class="framgent">Propriedades que são possíveis de animar via CSS</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Dicas Finais</h2>
+          <h4>Melhor guia de animações em PT-BR: https://github.com/daliannyvieira/css-animations-pocket-guide</h4>
         </section>
       </div>
     </div>
