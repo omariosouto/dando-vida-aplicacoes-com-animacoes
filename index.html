@@ -42,16 +42,23 @@
           <p><a href="https://mariosouto.com" target="_blank"> mariosouto.com </a><span>/</span><a href="https://github.com/soutomario" target="_blank"> @soutomario</a></p>
           <div style="margin: auto; display: flex; justify-content: center; align-items: center; width: 60%;"><img src="./img/logo-mario.svg" style="width: 15%; border: 0 !important; margin: 10px 30px; box-shadow: none; background: none;"><img src="./img/logo-pulso.svg" style="width: 20%; border: 0 !important; margin: 10px 30px; box-shadow: none; background: none;"></div>
         </section>
+        <section data-background-image="./img/mario-armario.jpg" data-background-size="contain" data-background-position="bottom center">
+          <h2 style="color: #FFF;"> </h2>
+        </section>
+        <section data-background-image="./img/mario-image.jpg" data-background-color="#000" data-background-size="contain" data-background-position="bottom center">
+          <h2 style="color: #FFF;">Já salvei a princesa</h2>
+        </section>
         <section>
           <h1> </h1>
           <ul> 
             <li>Facebook /soutomario</li>
             <li>GitHub   /soutomario</li>
             <li>Twitter  @soutomarios</li>
-          </ul>
+          </ul><br><br><br><br>
+          <h3 style="text-transform: initial;">#NetCodersCSS</h3>
         </section>
-        <section data-background-image="./img/gifs/layout-estatico.gif"></section>
-        <section data-background-image="./img/gifs/site-animado.gif"></section>
+        <section data-background-image="./img/gifs/layout-estatico.gif" data-background-size="contain" data-background-color="#000000"></section>
+        <section data-background-image="./img/gifs/site-animado.gif" data-background-size="contain" data-background-color="#000000"></section>
         <section>
           <h3>Legal pra C@R!#$(*@ né?</h3>
         </section>
@@ -61,7 +68,7 @@
         <section>
           <h3>Como podemos melhorar?</h3>
         </section>
-        <section data-background-image="./img/png/flash-start.png" data-background-size="contain">
+        <section data-background-image="./img/png/flash-start.png" data-background-size="contain" data-background-color="#000000">
           <h3 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Com flash!</h3>
         </section>
         <section data-background-image="./img/gifs/no-god-please.gif">
@@ -126,7 +133,7 @@
 }
             </style></pre>
         </section>
-        <section data-background-image="./img/gifs/animar-lateralmente.gif">
+        <section data-background-image="./img/gifs/animar-lateralmente.gif" data-background-size="contain">
           <h3 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Como animar de um lado para o outro?</h3>
         </section>
         <section>
@@ -159,11 +166,11 @@
         <section>
           <h2>Transform</h2>
           <div class="example-area example-area-transform">
-            <button class="transform btn transition">Transform</button>
-            <button class="transform btn position">  Position</button>
+            <button class="transition btn transform">Transform</button>
+            <button class="transition btn position">  Position</button>
           </div>
           <style>
-            .transform {
+            .transition {
               color: white;
               display: block;
               width: 7%;
@@ -173,18 +180,18 @@
             }
           </style>
           <pre>
-            <style contenteditable="true" style="display: block;">.transform {
+            <style contenteditable="true" style="display: block;">.example-area-transform { background-color: aquamarine; }
+ 
+.transition {
   position: relative;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   transition: .5s linear;
 }
-.example-area-transform:hover .transition {
+.example-area-transform:hover .transform {
   transform: translate(50px, 50px);
 }
 .example-area-transform:hover .position {
-  top: 50px;
-  left: 50px;
+  top: 50px; left: 50px;
 }
             </style></pre>
         </section>
@@ -203,7 +210,7 @@
 }
             </style></pre>
         </section>
-        <section data-background-image="./img/gifs/rotate-example.gif"></section>
+        <section data-background-image="./img/gifs/rotate-example.gif" data-background-size="contain" data-background-color="#000000"></section>
         <section>
           <h3>Zoom: Width Height</h3>
           <div class="example-area">
@@ -266,35 +273,35 @@
 }
             </style></pre>
         </section>
-        <section data-background-image="./img/gifs/rotate-example.gif"></section>
+        <section data-background-image="./img/gifs/rotate-example.gif" data-background-size="contain" data-background-color="#000000"></section>
         <section>
-          <h3>Scale<span class="fragment">  + Rotate</span></h3>
+          <h3>Scale<span>  + Rotate</span></h3>
           <div class="example-area">
-            <button class="btn botao08"></button>
+            <button class="btn botao08x"></button>
           </div>
           <style>
-            .botao08 {
+            .botao08x {
                padding-top: 0;
             }
           </style>
           <pre>
-            <style contenteditable="true" style="display: block;">.botao08 {
+            <style contenteditable="true" style="display: block;">.botao08x {
    width: 100px;
    height: 100px;
    transform: scale(.5); /* rotate(deg) */
    transition: transform 1s;
 }
-.botao08:hover {
+.botao08x:hover {
    transform: scale(1); /* rotate(deg) */
 }
             </style></pre>
         </section>
-        <section data-background-image="./img/gifs/skew-example.gif"></section>
+        <section data-background-image="./img/gifs/skew-example.gif" data-background-size="contain" data-background-color="#000000"></section>
         <section>
           <h2>Como recriar esse efeito na nossa land page?</h2>
         </section>
         <section>
-          <h3> <span class="fragment">Skew: </span>De Volta para o Futuro</h3>
+          <h3> <span>Skew: </span>De Volta para o Futuro</h3>
           <div class="example-area">
             <button class="btn botao09"><img src="./img/png/bttf-logo.png" style="border: 0 !important; box-shadow: none !important; background: none !important;"></button>
           </div>
@@ -316,59 +323,186 @@
 }
             </style></pre>
         </section>
-        <section data-background-image=".img/gifs/animacao-infinita.gif">
-          <h2>Beleza, mas além das animações de hover algumas animações acontecem sozinhas, como podemos fazer isso?</h2>
+        <section data-background-image="./img/gifs/animacao-infinita.gif" data-background-size="contain" data-background-color="#000000">
+          <h2 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Animações "Automáticas"</h2>
         </section>
         <section>
-          <h2>Animação é a palavra chave</h2>
+          <h2>Animação é a palavra chave</h2><br><br>
+          <pre><code>.elemento {
+  animation: "animation-name" "duration" ;
+}</code></pre>
         </section>
         <section>
-          <h2>E tudo começa no FPS</h2>
+          <h2>E tudo começa no <span style="color: #ff6a00;">FPS</span></h2>
         </section>
-        <section>
-          <h2>Não é First Person Shooter então, fechem o CS 1.6 ai</h2>
+        <section data-background-image="./img/gifs/cs.gif">
+          <h2 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Não é <span style="color: #ff6a00;">F</span>irst <span style="color: #ff6a00;">P</span>erson <span style="color: #ff6a00;">S</span>hooter então, fechem o CS 1.6 ai</h2>
         </section>
-        <section>
-          <h2>Frames Por Segundo</h2>
-          <p>https://www.youtube.com/watch?v=GD_iNT8uwQ0</p>
+        <section data-background-image="./img/gifs/flipbook.gif">
+          <h2 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);"><span style="color: #ff6a00;">F</span>rames <span style="color: #ff6a00;">P</span>er <span style="color: #ff6a00;">S</span>econd</h2>
         </section>
         <section>
           <h2>Como aplicar isso no CSS?</h2>
         </section>
         <section>
-          <h2>Content editable com aplicação da animação "from to"</h2>
+          <h3> <span>KeyFrames</span></h3>
+          <div class="example-area">
+            <button class="btn botao10"></button>
+          </div>
+          <style>
+            .botao10:hover {
+               animation: botao10 5s;
+            }
+          </style>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao10 {
+   animation: botao10 5s;
+}
+@keyframes botao10 {
+   from {
+      background-color: red;
+   }
+   to {
+      background-color: blue;
+   }
+}
+            </style></pre>
+        </section>
+        <section data-background-image="./img/gifs/flipbook.gif">
+          <h2 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">"Mas no gif eu tinham bem mais frames, como eu chego naquele resultado?"</h2>
         </section>
         <section>
-          <h2>Mas no vídeo eu tinha bem mais frames, como eu chego naquele resultado?</h2>
-        </section>
-        <section>
-          <h2>Fazer um quadrado andando trocando de cor pra cada porcentagem do keyframe</h2>
+          <h3> <span>KeyFrames: Porcentagem</span></h3>
+          <div class="example-area">
+            <button class="btn botao11"></button>
+          </div>
+          <style>
+            .botao11 {
+               width: 10%;
+               padding-top: 10%;
+            }
+          </style>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao11 {
+   animation: botao11 5s;
+}
+@keyframes botao11 {
+   0% {
+      background-color: red;
+   }
+   25% {
+      background-color: orange;
+   }
+   50% {
+      background-color: yellow;
+   }
+   75% {
+      background-color: green;
+   }
+   100% {
+      background-color: blue;
+   }
+}
+            </style></pre>
         </section>
         <section>
           <h2>O que tem de errado com essa animação?</h2>
+          <p class="fragment">Ela não se repete</p>
         </section>
         <section>
-          <h2>Repeat</h2>
+          <h3> <span>Iteração (Repetição)</span></h3>
+          <div class="example-area">
+            <button class="btn botao12"></button>
+          </div>
+          <style>
+            .botao12 {
+               width: 10%;
+               padding-top: 10%;
+            }
+          </style>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao12 {
+   animation: botao12 5s;
+   animation-iteration-count: infinite;
+}
+@keyframes botao12 {
+   0% {
+      width: 2%;
+      background-color: red;
+   }
+   50% {
+      background-color: yellow;
+   }
+   100% {
+      width: 30%;
+      background-color: blue;
+   }
+}
+            </style></pre>
         </section>
         <section>
           <h2>Ainda falta algo, reparem ela vai do inicio ao fim e depois volta para o começo.</h2>
         </section>
         <section>
-          <h2>Alternate</h2>
+          <h2>animation-direction</h2>
+          <div class="example-area">
+            <button class="btn botao13"></button>
+          </div>
+          <style>
+            .botao13 {
+               width: 10%;
+               padding-top: 10%;
+            }
+          </style>
+          <pre>
+            <style contenteditable="true" style="display: block;">.botao13 {
+   animation: botao13 2s infinite;
+   animation-direction: alternate;
+}
+@keyframes botao13 {
+   0% {
+      width: 2%;
+      background-color: red;
+   }
+   50% {
+      background-color: yellow;
+   }
+   100% {
+      width: 30%;
+      background-color: blue;
+   }
+}
+            </style></pre>
+        </section>
+        <section data-background-image="./img/gifs/layout-animado-exemplo.gif" data-background-size="contain" data-background-color="#000000"></section>
+        <section>
+          <h3>Como animar no Scroll?</h3>
+        </section>
+        <section data-background-image="./img/png/animusjs.png">
+          <h3 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">AnimusJS</h3>
+          <h5><a href="https://github.com/soutomario/animusjs" style="color: white;text-shadow: 0px 0px 17px rgba(0,0,0,1);">https://github.com/soutomario/animusjs</a></h5>
         </section>
         <section>
-          <h2>Mão na massa</h2>
+          <h3>Mão na massa!</h3>
         </section>
         <section>
           <h2>Dicas Finais</h2>
           <ul>
-            <li class="framgent">Will Change</li>
-            <li class="framgent">Propriedades que são possíveis de animar via CSS</li>
+            <li>Will Change</li>
+            <li>Propriedades que são possíveis de animar via CSS<br><a>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties</a></li>
           </ul>
         </section>
+        <section data-background-image="./img/png/guia-css-animations.png">
+          <h2 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Dicas Finais</h2>
+          <h4 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);">Melhor guia de animações em PT-BR:</h4>
+          <h5 style="color: #FFF; text-shadow: 0px 0px 17px rgba(0,0,0,1);"> <a href="https://github.com/daliannyvieira/css-animations-pocket-guide" style="color: white;">https://github.com/daliannyvieira/css-animations-pocket-guide</a></h5>
+        </section>
         <section>
-          <h2>Dicas Finais</h2>
-          <h4>Melhor guia de animações em PT-BR: https://github.com/daliannyvieira/css-animations-pocket-guide</h4>
+          <h2>OBRIGADO!</h2>
+        </section>
+        <section data-background-image="./img/premio-abradi-sp.jpg" data-background-size="contain">
+          <p><a href="https://goo.gl/7klWob" target="_blank" style="background-color: #FFF; padding: 10px; border: 5px solid orange !important;">https://goo.gl/7klWob</a></p>
+          <p><a href="https://goo.gl/7klWob" target="_blank"><img src="https://chart.googleapis.com/chart?cht=qr&amp;chs=500x500&amp;choe=UTF-8&amp;chld=H&amp;chl=https://goo.gl/7klWob" style="background-color: #FFF; padding: 10px; border: 5px solid orange !important;"></a></p>
         </section>
       </div>
     </div>
